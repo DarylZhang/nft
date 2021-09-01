@@ -32,10 +32,7 @@ const Banner = () => {
             </DiscountLabel>
           </Fade>
           <Fade up delay={100}>
-            <Heading
-              as="h1"
-              content="Welcome next level  cryptocurrency token with faster transfer"
-            />
+            <Heading as="h1" content="NFT全球交易 中国第一站" />
           </Fade>
           <Fade up delay={200}>
             <Text

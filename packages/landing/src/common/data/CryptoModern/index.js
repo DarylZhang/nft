@@ -8,31 +8,31 @@ export const navbar = {
   navMenu: [
     {
       id: 1,
-      label: 'Home',
+      label: '首页',
       path: '#home',
       offset: '84',
     },
     {
       id: 2,
-      label: 'Key Features',
+      label: '关于NFT',
       path: '#key-features',
       offset: '81',
     },
     {
       id: 3,
-      label: 'Fund Raising',
+      label: '关于我们',
       path: '#fund',
       offset: '81',
     },
     {
       id: 4,
-      label: 'Locations',
+      label: '商务合作',
       path: '#map',
       offset: '81',
     },
     {
       id: 5,
-      label: 'FAQ',
+      label: '铸造NFT',
       path: '#faqSection',
       offset: '81',
     },
