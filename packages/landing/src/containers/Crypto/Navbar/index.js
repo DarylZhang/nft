@@ -107,7 +107,11 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               <Button {...button} title="铸造NFT" onClick={handleLoginModal} />
             </a>
             <a className="navbar_button">
-              <Button {...button} title="登录/注册" />
+              <Button
+                {...button}
+                title="登录/注册"
+                onClick={handleLoginModal}
+              />
             </a>
             {/*</Link>*/}
             <Drawer
@@ -123,9 +127,23 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
+              <a
+                className="navbar_drawer_button"
+                style={{ marginBottom: '40px' }}
+              >
+                <Button
+                  {...button}
+                  title="铸造NFT"
+                  onClick={handleLoginModal}
+                />
+              </a>
               <Link href="#">
                 <a className="navbar_drawer_button">
-                  <Button {...button} title="登录/注册" />
+                  <Button
+                    {...button}
+                    title="登录/注册"
+                    onClick={handleLoginModal}
+                  />
                 </a>
               </Link>
             </Drawer>
