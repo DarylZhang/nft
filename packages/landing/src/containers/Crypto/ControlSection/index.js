@@ -12,7 +12,7 @@ import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { ControlWrapper } from './controlSection.style';
-import ControlImage from 'common/assets/image/crypto/control.jpg';
+import ControlImage from 'common/assets/image/crypto/control.svg';
 
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>
@@ -53,7 +53,7 @@ const ControlSection = ({
   readMoreTitle,
 }) => {
   return (
-    <ControlWrapper id="control">
+    <ControlWrapper id="nft_value">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
@@ -64,38 +64,38 @@ const ControlSection = ({
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
-            <Text {...sectionSubTitle} />
+            {/*<Text {...sectionSubTitle} />*/}
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            <Box className="readMoreSection">
-              <Text {...readMoreTitle} />
-              <Link href="#">
-                <a className="readMore">Read More. </a>
-              </Link>
-            </Box>
-            <Fade up>
-              <Box className="countDownSection">
-                <Countdown
-                  date={Date.now() + 909999999}
-                  renderer={renderer}
-                  completed={false}
-                />
-              </Box>
-            </Fade>
-            <Box className="countDownButton">
-              <Button
-                title="BUY TOKENS"
-                className="countDownMainButton"
-                {...btnStyle}
-              />
-              <Button
-                title="35% Bonus"
-                className="countDownDiscountButton"
-                {...btnStyle}
-              />
-            </Box>
+            {/*<Box className="readMoreSection">*/}
+            {/*  <Text {...readMoreTitle} />*/}
+            {/*  <Link href="#">*/}
+            {/*    <a className="readMore">Read More. </a>*/}
+            {/*  </Link>*/}
+            {/*</Box>*/}
+            {/*<Fade up>*/}
+            {/*  <Box className="countDownSection">*/}
+            {/*    <Countdown*/}
+            {/*      date={Date.now() + 909999999}*/}
+            {/*      renderer={renderer}*/}
+            {/*      completed={false}*/}
+            {/*    />*/}
+            {/*  </Box>*/}
+            {/*</Fade>*/}
+            {/*<Box className="countDownButton">*/}
+            {/*  <Button*/}
+            {/*    title="BUY TOKENS"*/}
+            {/*    className="countDownMainButton"*/}
+            {/*    {...btnStyle}*/}
+            {/*  />*/}
+            {/*  <Button*/}
+            {/*    title="35% Bonus"*/}
+            {/*    className="countDownDiscountButton"*/}
+            {/*    {...btnStyle}*/}
+            {/*  />*/}
+            {/*</Box>*/}
           </Box>
         </Box>
       </Container>
@@ -134,7 +134,7 @@ ControlSection.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Take control of your credit and identity.',
+    content: 'NFT的价值',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -147,7 +147,7 @@ ControlSection.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      'Crumbs makes crypto investing effortless and automated, so now you would not miss the right time to buy. From the customer wallet to the marchent wallet in a few minute.',
+      '与所有资产一样，供求是价格的主要市场驱动因素。由于 NFT 的稀缺性以及游戏玩家、收藏家和投资者对它们的高需求，人们通常准备为它们支付大量资金',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

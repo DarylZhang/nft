@@ -15,6 +15,9 @@ import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
 import LogoImage from 'common/assets/image/saasModern/logo-white.png';
 import LogoImageAlt from 'common/assets/image/saasModern/logo.png';
+import Heading from '../../../common/components/Heading';
+import { closeModal, openModal } from '@redq/reuse-modal';
+import LoginModal from '../../Agency/LoginModal';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -26,35 +29,87 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     });
   };
 
+  // Default close button for modal
+  const CloseModalButton = () => (
+    <Button
+      className="modalCloseBtn"
+      variant="fab"
+      onClick={() => closeModal()}
+      icon={<i className="flaticon-plus-symbol" />}
+    />
+  );
+
+  // Alt close button for modal
+  const CloseModalButtonAlt = () => (
+    <Button
+      className="modalCloseBtn alt"
+      variant="fab"
+      onClick={() => closeModal()}
+      icon={<i className="flaticon-plus-symbol" />}
+    />
+  );
+
+  // Authentication modal handler
+  const handleLoginModal = () => {
+    openModal({
+      config: {
+        className: 'login-modal',
+        disableDragging: true,
+        width: '100%',
+        height: '100%',
+        animationFrom: { transform: 'translateY(100px)' }, // react-spring <Spring from={}> props value
+        animationTo: { transform: 'translateY(0)' }, //  react-spring <Spring to={}> props value
+        transition: {
+          mass: 1,
+          tension: 180,
+          friction: 26,
+        },
+      },
+      component: LoginModal,
+      componentProps: {},
+      closeComponent: CloseModalButton,
+      closeOnClickOutside: false,
+    });
+  };
+
   return (
     <NavbarWrapper {...navbarStyle} className="saas_navbar">
       <Container>
         <Box {...row}>
-          <Logo
-            href="#"
-            logoSrc={LogoImage}
-            title="Portfolio"
+          <Heading
+            as="h3"
+            color="white"
+            content="NFT-CN"
             logoStyle={logoStyle}
-            className="main-logo"
           />
-          <Logo
-            href="#"
-            logoSrc={LogoImageAlt}
-            title="Portfolio"
-            logoStyle={logoStyle}
-            className="logo-alt"
-          />
+          {/*<Logo*/}
+          {/*  href="#"*/}
+          {/*  logoSrc={LogoImage}*/}
+          {/*  title="Portfolio"*/}
+          {/*  logoStyle={logoStyle}*/}
+          {/*  className="main-logo"*/}
+          {/*/>*/}
+          {/*<Logo*/}
+          {/*  href="#"*/}
+          {/*  logoSrc={LogoImageAlt}*/}
+          {/*  title="Portfolio"*/}
+          {/*  logoStyle={logoStyle}*/}
+          {/*  className="logo-alt"*/}
+          {/*/>*/}
           <Box {...menuWrapper}>
             <ScrollSpyMenu
               className="main_menu"
               menuItems={MENU_ITEMS}
               offset={-70}
             />
-            <Link href="#">
-              <a className="navbar_button">
-                <Button {...button} title="GET STARTED" />
-              </a>
-            </Link>
+            {/*<Link href="#">*/}
+            <a className="navbar_button" style={{ marginRight: '40px' }}>
+              <Button {...button} title="铸造NFT" onClick={handleLoginModal} />
+            </a>
+            <a className="navbar_button">
+              <Button {...button} title="登录/注册" />
+            </a>
+            {/*</Link>*/}
             <Drawer
               width="420px"
               placement="right"
@@ -70,7 +125,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               />
               <Link href="#">
                 <a className="navbar_drawer_button">
-                  <Button {...button} title="GET STARTED" />
+                  <Button {...button} title="登录/注册" />
                 </a>
               </Link>
             </Drawer>

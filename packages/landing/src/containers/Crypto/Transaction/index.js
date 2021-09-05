@@ -23,15 +23,15 @@ const TransactionsHistory = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <TransactionsWrapper id="transactions">
+    <TransactionsWrapper id="what_is_nft">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
-            <Text {...sectionSubTitle} />
+            {/*<Text {...sectionSubTitle} />*/}
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={<Button title="GET DOCS" {...btnStyle} />}
+              // button={<Button title="GET DOCS" {...btnStyle} />}
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
@@ -88,7 +88,7 @@ TransactionsHistory.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Our wallet is built for the crypto novice',
+    content: '什么是NFT',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -101,7 +101,7 @@ TransactionsHistory.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      'You can trust us for any kind of services and some of the world class companies have also trusted us .',
+      'NFT 是一种数字资产，代表现实世界的对象，如艺术、音乐、游戏内物品和视频。',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -111,7 +111,7 @@ TransactionsHistory.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'How Transactions Work',
+    content: 'NFT的特点',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],

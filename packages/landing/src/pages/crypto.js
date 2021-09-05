@@ -22,7 +22,7 @@ const Crypto = () => {
     <ThemeProvider theme={cryptoTheme}>
       <Fragment>
         <Head>
-          <title>Cryptocurrency | A react next landing page</title>
+          <title>NFT-CN Landing Page</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#ec5555" />
 
@@ -41,14 +41,14 @@ const Crypto = () => {
             </DrawerProvider>
           </Sticky>
           <Banner />
-          <BannerSlider />
+          {/*<BannerSlider />*/}
           <Transactions />
           <ControlSections />
-          <TrustedProofSections />
-          <ScalableSections />
-          <SlideSections />
-          <BetaSections />
-          <Footer />
+          {/*<TrustedProofSections />*/}
+          {/*<ScalableSections />*/}
+          {/*<SlideSections />*/}
+          {/*<BetaSections />*/}
+          {/*<Footer />*/}
         </ContentWrapper>
       </Fragment>
     </ThemeProvider>

@@ -108,6 +108,80 @@ export const GlobalStyle = createGlobalStyle`
       }
     }
   }
+
+  .reuseModalHolder {
+    border: 0 !important;
+    background-color: transparent !important;
+
+    &.search-modal,
+    &.video-modal {
+      background-color: rgba(255, 255, 255, 0.96) !important;
+      overflow-y: auto !important;
+
+      .innerRndComponent {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        iframe {
+          max-width: 700px !important;
+          max-height: 380px !important;
+          width: 100% !important;
+          height: 100% !important;
+          border-radius: 5px !important;
+        }
+      }
+    }
+
+    &.demo_switcher_modal {
+      border: 0 !important;
+      background-color: rgba(16, 30, 77, 0.8) !important;
+      .innerRndComponent {
+        border-radius: 8px !important;
+      }
+    }
+
+    &.video-modal {
+      background-color: transparent !important;
+    }
+
+    .innerRndComponent {
+      padding-right: 0 !important;
+    }
+  }
+
+  .reuseModalCloseBtn {
+    cursor: pointer !important;
+  }
+
+  .reuseModalOverlay,
+  .reuseModalParentWrapper{
+    z-index: 99999!important;
+  }
+
+  .reuseModalHolder.login-modal{
+    @media (min-width: 768px) {
+      top: 0!important;
+      left: 0!important;
+      max-width: 100%!important;
+      max-height: 100%!important;
+    }
+  }
+
+  .reuseModalHolder.search-modal{
+    top: 0!important;
+    left: 0!important;
+    max-width: 100%!important;
+    max-height: 100%!important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .reuseModalHolder.login-modal .innerRndComponent{
+    overflow-y: auto;
+    margin-right: -30px;
+    padding-right: 30px !important;
+  }
 `;
 
 export const ContentWrapper = styled.div`

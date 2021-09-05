@@ -13,6 +13,8 @@ import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
 import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
+import { closeModal, openModal } from '@redq/reuse-modal';
+import LoginModal from '../../Agency/LoginModal';
 
 const BannerSection = ({
   row,
@@ -26,13 +28,13 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Get Started" {...btnStyle} />
-      <Button
-        title="Download Whitepaper"
-        variant="textButton"
-        icon={<i className="flaticon-next" />}
-        {...outlineBtnStyle}
-      />
+      <Button title="铸造NFT" {...btnStyle} />
+      {/*<Button*/}
+      {/*  title="Download Whitepaper"*/}
+      {/*  variant="textButton"*/}
+      {/*  icon={<i className="flaticon-next" />}*/}
+      {/*  {...outlineBtnStyle}*/}
+      {/*/>*/}
     </Fragment>
   );
   const ShareButtonGroup = () => (
@@ -55,6 +57,7 @@ const BannerSection = ({
       />
     </Fragment>
   );
+
   return (
     <BannerWrapper id="banner_section">
       <Particles />
@@ -65,21 +68,13 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <FeatureBlock
-              title={
-                <Heading
-                  content="Accounts Payable Automation 80% Faster Bill Pay and AP"
-                  {...title}
-                />
-              }
+              title={<Heading content="NFT全球交易中国第一站" {...title} />}
               description={
-                <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly."
-                  {...description}
-                />
+                <Text content="NFT-CHINA 资产永存 收益永续" {...description} />
               }
-              button={<ButtonGroup />}
+              // button={<ButtonGroup />}
             />
-            <FeatureBlock button={<ShareButtonGroup />} />
+            {/*<FeatureBlock button={<ShareButtonGroup />} />*/}
           </Box>
         </Box>
       </Container>

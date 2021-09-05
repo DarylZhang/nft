@@ -19,31 +19,30 @@ import BETA3 from '../../assets/image/crypto/beta-3.svg';
 
 export const MENU_ITEMS = [
   {
-    label: 'Home',
+    label: '首页',
     path: '#banner_section',
     offset: '0',
   },
   {
-    label: 'Feature',
-    path: '#trusted',
+    label: 'NFT介绍',
+    path: '#what_is_nft',
     offset: '0',
   },
   {
-    label: 'Offers',
-    path: '#scalable',
+    label: 'NFT价值',
+    path: '#nft_value',
     offset: '-10',
   },
-
-  {
-    label: 'Payment Proofs',
-    path: '#featureslider',
-    offset: '-10',
-  },
-  {
-    label: 'Contact Us',
-    path: '#footerSection',
-    offset: '380',
-  },
+  // {
+  //   label: '铸造NFT',
+  //   path: '#generate_NFT',
+  //   offset: '-10',
+  // },
+  // {
+  //   label: 'Contact Us',
+  //   path: '#footerSection',
+  //   offset: '380',
+  // },
 ];
 
 export const TESTIMONIALS = [
@@ -79,24 +78,23 @@ export const TESTIMONIALS = [
 export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE1,
-    title: 'Create Payment Address',
-    des: 'Provide your payout wallet address and callback URL to PayBear API.',
+    title: 'NFT赋予艺术家对数字资产的所有权',
+    des: '当内容创建者创建数字资产时，NFT 不仅让他们有机会展示真实性，而且还能从他们的工作中获利。像模因这样的东西广为流传，这可能意味着创作者的可观收入来源',
   },
   {
     image: FEATURE2,
-    title: 'Ask for Payment',
-    des: 'Show your customer the wallet address as well as the payment amount.',
+    title: 'NFT是独一无二且具有收藏价值的数字资产',
+    des: '许多人喜欢收集独特或稀有的东西所带来的兴奋。 NFT 为可收集内容提供了额外的合法性层，尤其是以数字资产的形式',
   },
   {
     image: FEATURE3,
-    title: 'Get Paid',
-    des: 'Payment is sent to the payout wallet immediately.',
+    title: 'NFT是不可更改的数字资产',
+    des: '因为不可替代的代币是基于区块链的，所以它们永远不能被更改、擦除或替换。同样，在证明数字内容的来源或真实性时，这是一种宝贵的品质',
   },
   {
     image: FEATURE4,
-    title: 'Get Payment Notification.',
-    des:
-      'Callbacks are sent to the URL you specified. You can process customer order',
+    title: 'NFT可以包括智能合约',
+    des: '智能合约是区块链技术的另一个非常有趣的特征。本质上，它们可以存储在满足某些条件时执行的指令。因此，具有智能合约的 NFT 可以在未来出售 NFT 时为艺术家提供一定比例的利润',
   },
 ];
 export const PROOFS_FEATURE = [
