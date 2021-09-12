@@ -9,6 +9,7 @@ import FeatureBlockWrapper, {
 const FeatureBlock = ({
   className,
   icon,
+  url,
   title,
   button,
   description,
@@ -51,7 +52,9 @@ const FeatureBlock = ({
       {title || description || button ? (
         <Fragment>
           <ContentWrapper className="content__wrapper" {...contentStyle}>
-            {title}
+            <a href={url} target="_blank">
+              {title}
+            </a>
             {description}
             {button && (
               <ButtonWrapper className="button__wrapper" {...btnWrapperStyle}>
@@ -69,6 +72,7 @@ const FeatureBlock = ({
 };
 
 FeatureBlock.propTypes = {
+  url: PropTypes.element,
   /** ClassName of the FeatureBlock */
   className: PropTypes.string,
 

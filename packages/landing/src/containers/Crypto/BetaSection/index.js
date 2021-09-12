@@ -19,7 +19,7 @@ const BetaSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <BetaSectionWrapper id="betasection">
+    <BetaSectionWrapper id="generate_NFT">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock
@@ -27,26 +27,26 @@ const BetaSection = ({
             description={<Text {...description} />}
           />
         </Box>
-        <Box className="BetaSection">
-          <FeatureSection>
-            {BETA_FEATURE.map((item, index) => (
-              <Fade up key={`feature-${index}`}>
-                <div className="featureWrapper">
-                  <Image src={item.image} alt={item.title} />
-                  <Box className="contextPortion">
-                    <Heading
-                      as="h3"
-                      content={item.title}
-                      {...featureTitleStyle}
-                    />
+        {/*<Box className="BetaSection">*/}
+        {/*  <FeatureSection>*/}
+        {/*    {BETA_FEATURE.map((item, index) => (*/}
+        {/*      <Fade up key={`feature-${index}`}>*/}
+        {/*        <div className="featureWrapper">*/}
+        {/*          <Image src={item.image} alt={item.title} />*/}
+        {/*          <Box className="contextPortion">*/}
+        {/*            <Heading*/}
+        {/*              as="h3"*/}
+        {/*              content={item.title}*/}
+        {/*              {...featureTitleStyle}*/}
+        {/*            />*/}
 
-                    <Text content={item.des} {...featureDescriptionStyle} />
-                  </Box>
-                </div>
-              </Fade>
-            ))}
-          </FeatureSection>
-        </Box>
+        {/*            <Text content={item.des} {...featureDescriptionStyle} />*/}
+        {/*          </Box>*/}
+        {/*        </div>*/}
+        {/*      </Fade>*/}
+        {/*    ))}*/}
+        {/*  </FeatureSection>*/}
+        {/*</Box>*/}
       </Container>
     </BetaSectionWrapper>
   );
@@ -76,7 +76,7 @@ BetaSection.defaultProps = {
   },
 
   title: {
-    content: 'Be the first to use our Beta!',
+    content: '如何铸造NFT',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -87,7 +87,12 @@ BetaSection.defaultProps = {
   },
 
   description: {
-    content: 'Become part of our ever growing community.',
+    content:
+      '首先您需要申请NFT铸造资格？\n\r' +
+      '如您的账号还未实名认证，请先注册并进行实名认证。\n' +
+      '如果已经完成实名认证，请点击顶部导航栏“铸造NFT”按钮 ➡ 阅读并同意《NFT铸造协议》，点击“确认申请” ➡ 设置NFT资产账户密码 ➡ 等待审核资格通过。\n' +
+      '\n\r' +
+      '审核资格通过后，点击顶部导航栏“铸造NFT”按钮 ➡ 输入NFT账户密码  ➡填写作品信息和NFT信息➡ 在线提交带铸造的资料➡等待邮件确认通知\n',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

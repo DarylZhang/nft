@@ -29,17 +29,13 @@ const LoginModal = ({
 }) => {
   const LoginButtonGroup = () => (
     <Fragment>
-      <Button className="default" title="LOGIN" {...btnStyle} />
-      <Button
-        title="Forget Password"
-        variant="textButton"
-        {...outlineBtnStyle}
-      />
+      <Button className="default" title="登录" {...btnStyle} />
+      <Button title="忘记密码" variant="textButton" {...outlineBtnStyle} />
     </Fragment>
   );
   const SignupButtonGroup = () => (
     <Fragment>
-      <Button className="default" title="REGISTER" {...btnStyle} />
+      <Button className="default" title="注册" {...btnStyle} />
     </Fragment>
   );
   return (
@@ -50,54 +46,56 @@ const LoginModal = ({
         </Box>
         <Box className="col tabCol" {...col}>
           <Box {...contentWrapper}>
-            <Image src={LogoImage} {...logoStyle} alt="Logo" />
+            {/*<Image src={LogoImage} {...logoStyle} alt="Logo" />*/}
+            <Heading
+              as="h3"
+              color="black"
+              content="NFT-CN"
+              logoStyle={logoStyle}
+            />
             <Tabs
               defaultActiveKey="loginForm"
               animated={{ tabPane: true }}
               // renderTabBar={() => <ScrollableInkTabBar />}
               // renderTabContent={() => <TabContent />}
             >
-              <TabPane tab="LOGIN" key="loginForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
-                <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
-                  {...descriptionStyle}
-                />
-                <Button
-                  icon={<Image src={GoogleLogo} alt="Google Icon" />}
-                  title="Sign in with Google"
-                  iconPosition="left"
-                  className="google-login__btn"
-                  {...googleButtonStyle}
-                />
+              <TabPane tab="登录" key="loginForm">
+                {/*<Heading content="Welcome Folk" {...titleStyle} />*/}
+                {/*<Text*/}
+                {/*  content="Welcome to Mate Family. Please login with your personal account information letter."*/}
+                {/*  {...descriptionStyle}*/}
+                {/*/>*/}
+                {/*<Button*/}
+                {/*  icon={<Image src={GoogleLogo} alt="Google Icon" />}*/}
+                {/*  title="Sign in with Google"*/}
+                {/*  iconPosition="left"*/}
+                {/*  className="google-login__btn"*/}
+                {/*  {...googleButtonStyle}*/}
+                {/*/>*/}
 
-                <Input inputType="email" isMaterial label="Email Address" />
-                <Input inputType="password" isMaterial label="Password" />
-                <CheckBox
-                  id="remember"
-                  htmlFor="remember"
-                  labelText="Remember Me"
-                />
+                <Input inputType="email" isMaterial label="电子邮件" />
+                <Input inputType="password" isMaterial label="密码" />
+                <CheckBox id="remember" htmlFor="remember" labelText="记住我" />
                 <div>
                   <LoginButtonGroup />
                 </div>
               </TabPane>
-              <TabPane tab="REGISTER" key="registerForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
-                <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
-                  {...descriptionStyle}
-                />
-                <Button
-                  icon={<Image src={GoogleLogo} alt="Google Icon" />}
-                  title="Sign up with Google"
-                  iconPosition="left"
-                  className="google-login__btn"
-                  {...googleButtonStyle}
-                />
-                <Input isMaterial label="Full Name" />
-                <Input inputType="email" isMaterial label="Email Address" />
-                <Input inputType="password" isMaterial label="Password" />
+              <TabPane tab="注册" key="registerForm">
+                {/*<Heading content="Welcome Folk" {...titleStyle} />*/}
+                {/*<Text*/}
+                {/*  content="Welcome to Mate Family. Please login with your personal account information letter."*/}
+                {/*  {...descriptionStyle}*/}
+                {/*/>*/}
+                {/*<Button*/}
+                {/*  icon={<Image src={GoogleLogo} alt="Google Icon" />}*/}
+                {/*  title="Sign up with Google"*/}
+                {/*  iconPosition="left"*/}
+                {/*  className="google-login__btn"*/}
+                {/*  {...googleButtonStyle}*/}
+                {/*/>*/}
+                <Input isMaterial label="姓名" />
+                <Input inputType="email" isMaterial label="电子邮件" />
+                <Input inputType="password" isMaterial label="密码" />
                 <div>
                   <SignupButtonGroup />
                 </div>

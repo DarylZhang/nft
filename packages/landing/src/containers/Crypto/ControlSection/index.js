@@ -147,7 +147,8 @@ ControlSection.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      '与所有资产一样，供求是价格的主要市场驱动因素。由于 NFT 的稀缺性以及游戏玩家、收藏家和投资者对它们的高需求，人们通常准备为它们支付大量资金',
+      '与所有资产一样，供求是价格的主要市场驱动因素。由于 NFT 的稀缺性以及游戏玩家、收藏家和投资者对它们的高需求，人们通常准备为它们支付大量资金\n' +
+      '目前，被称为被称为NFT市场的“亚马逊”的OpenSea是NFT领域最大的交易平台。目前Opensea上的交易量进入了爆发阶段，2021年1月份的交易量为800万美元，到2月份这个数字迅速增长为9000万美元，再到4月份的单日交易额便已经达到了1991.86万美元，创造了历史新高。一些其他的比较知名的NFT艺术品交易平台比如SuperRare、KnownOrigin、Async Art、AART也出现了快速增长的交易额。所以NFT是一个时代的产物，NFT数字资产具有无限的商业价值和前景。',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

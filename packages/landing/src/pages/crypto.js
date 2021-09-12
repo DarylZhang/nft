@@ -16,6 +16,7 @@ import ScalableSections from 'containers/Crypto/ScalableSection';
 import SlideSections from 'containers/Crypto/CryptoSlides';
 import BetaSections from 'containers/Crypto/BetaSection';
 import Footer from 'containers/Crypto/Footer';
+import ChooseUs from '../containers/AppCreative/ChooseUs';
 
 const Crypto = () => {
   return (
@@ -47,7 +48,8 @@ const Crypto = () => {
           {/*<TrustedProofSections />*/}
           {/*<ScalableSections />*/}
           {/*<SlideSections />*/}
-          {/*<BetaSections />*/}
+          <ChooseUs />
+          <BetaSections />
           {/*<Footer />*/}
         </ContentWrapper>
       </Fragment>

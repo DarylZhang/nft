@@ -11,8 +11,12 @@ import { chooseUs } from 'common/data/AppCreative';
 const ChooseUs = () => {
   const { title, thumb, features } = chooseUs;
   return (
-    <SectionWrapper id="trade_case">
+    <SectionWrapper>
       <Container>
+        <ThumbWrapper>
+          <Image src={thumb} alt="App Image" />
+        </ThumbWrapper>
+
         <TextWrapper>
           <Heading content={title} />
           {features.map((item) => (
@@ -20,16 +24,11 @@ const ChooseUs = () => {
               key={`app-feature--key${item.id}`}
               iconPosition="left"
               icon={<Text as="span" content={'0' + item.id} />}
-              title={<Heading as="h3" content={item.title} />}
-              url={item.url}
+              title={<Heading as="h3" content={item.url} />}
               description={<Text content={item.description} />}
             />
           ))}
         </TextWrapper>
-
-        <ThumbWrapper>
-          <Image src={thumb} alt="App Image" />
-        </ThumbWrapper>
       </Container>
     </SectionWrapper>
   );

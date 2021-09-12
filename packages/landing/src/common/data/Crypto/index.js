@@ -33,16 +33,16 @@ export const MENU_ITEMS = [
     path: '#nft_value',
     offset: '-10',
   },
-  // {
-  //   label: '铸造NFT',
-  //   path: '#generate_NFT',
-  //   offset: '-10',
-  // },
-  // {
-  //   label: 'Contact Us',
-  //   path: '#footerSection',
-  //   offset: '380',
-  // },
+  {
+    label: '交易案例',
+    path: '#trade_case',
+    offset: '-10',
+  },
+  {
+    label: '如何铸造',
+    path: '#generate_NFT',
+    offset: '-10',
+  },
 ];
 
 export const TESTIMONIALS = [
@@ -84,12 +84,12 @@ export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE2,
     title: 'NFT是独一无二且具有收藏价值的数字资产',
-    des: '许多人喜欢收集独特或稀有的东西所带来的兴奋。 NFT 为可收集内容提供了额外的合法性层，尤其是以数字资产的形式',
+    des: '“许多人喜欢收集独特或稀有的东西所带来的兴奋。  NFT提供了一种标记数字资产所有权的方法， NFT作品含有可追溯的「识别信息」，从而让可复制性变得无关紧要，这可以使更多数字内容创作者放心创作。换言之，NFT 为可收集内容提供了额外的合法性层，尤其是以数字资产的形式”',
   },
   {
     image: FEATURE3,
     title: 'NFT是不可更改的数字资产',
-    des: '因为不可替代的代币是基于区块链的，所以它们永远不能被更改、擦除或替换。同样，在证明数字内容的来源或真实性时，这是一种宝贵的品质',
+    des: '因为不可替代的代币是基于区块链的，所以它们永远不能被更改、擦除或替换。同样，在证明数字内容的来源或真实性时，这是一种宝贵的品质. 创作者（或持有者）在为自己的数字内容作品铸造NFT后，可用其作为自己对作品数权的凭证。基于NFT的标准化、唯一性和流动性特点，当有人想要购买该数字内容作品的数权时，可以直接通过NFT交易，快捷地完成数权转移',
   },
   {
     image: FEATURE4,

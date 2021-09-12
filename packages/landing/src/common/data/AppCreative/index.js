@@ -85,29 +85,32 @@ export const keyFeatures = {
 /* ------------------------------------ */
 // Choose us data section
 /* ------------------------------------ */
-import chooseThumb from '../../assets/image/appCreative/chooseThumb.png';
+import chooseThumb from '../../assets/image/crypto/trade-case.svg';
 
 export const chooseUs = {
-  title: 'Why you choose Custom app for your daily use?',
+  title: '交易案例',
   thumb: chooseThumb,
   features: [
     {
       id: 1,
-      title: 'Front-end Development',
+      title: '艺术作品',
+      url: 'https://www.theverge.com/2021/3/11/22325054/beeple-christies-nft-sale-cost-everydays-69-million',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        '2021年3月11日，一枚代表着艺术家 Beeple所创作的艺术作品——《每一天：前5000天》的所有权的NFT，在佳士得拍卖行以69346250美元（约合人民币4.51亿元）的竞拍价售出.',
     },
     {
       id: 2,
-      title: 'Front-end Development',
+      title: '网络聊天工具',
+      url: 'https://www.cnbc.com/2021/03/22/jack-dorsey-sells-his-first-tweet-ever-as-an-nft-for-over-2point9-million.html',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        '3月23日，Twitter联合创始人Jack Dorsey，将第一条推特以NTF形式拍卖，成交价超过290万美元.',
     },
     {
       id: 3,
-      title: 'Front-end Development',
+      title: '食品',
+      url: 'https://www.eater.com/22337808/pizza-hut-nft-marketplace-jpeg-pizza-art',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        '必胜客加拿大公司推出了一款“像素化披萨”艺术品，并将其以 0.0001 ETH（约合 0.18 美元）的价格挂在了 NFT 交易平台 Rarible 上.',
     },
   ],
 };

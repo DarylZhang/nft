@@ -101,7 +101,7 @@ TransactionsHistory.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      'NFT 是一种数字资产，代表现实世界的对象，如艺术、音乐、游戏内物品和视频。',
+      'NFT是Non-Fungible Token的缩写，中文称为「非同质化代币」，是一种非同质化通证。它是一个储存在区块链（以太坊、币安智能链、火币生态链等）上的数字内容作品权益（数权）的签名证明。通常是指开发者在以太坊平台上根据ERC721标准/协议所发行的代币，它的特性为不可分割、不可替代、独一无二的，简单来说，采用ERC721标准/协议而发行的代币就叫做NFT。简而言之，NFT 是一种数字资产，代表现实世界的对象，如艺术、音乐、游戏内物品和视频。',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
